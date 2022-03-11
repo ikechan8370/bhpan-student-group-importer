@@ -43,3 +43,5 @@ args为参数，执行`java -jar target/bhpan-connect-0.0.1-SNAPSHOT.jar -h`查�
 
 1. 群组id进入群组页面获取，url形式应该是 `https://bhpan.buaa.edu.cn/#/home/documents/all?gns=E097E5B440904******D996789D39EDE&selections=%5B%5D`， 其中的 `s=E097E5B440904******D996789D39EDE` 就是群组id
 2. 花名册文件为excel格式，应该是老师从教务直接导出的。自己写也可以，必须有一列为学号。
+
+![Alt](https://repobeats.axiom.co/api/embed/1972ad43c42387e5d8d17072d56c20e2e651e294.svg "Repobeats analytics image")
