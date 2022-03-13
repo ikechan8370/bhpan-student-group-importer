@@ -26,10 +26,10 @@ args为参数，执行`java -jar target/bhpan-connect-0.0.1-SNAPSHOT.jar -h`查�
 * 拉取镜像
 `docker pull registry.cn-hangzhou.aliyuncs.com/geyinchi/bhpan-student-group-importer:lates`
 * 运行：
-`docker run -it registry.cn-hangzhou.aliyuncs.com/geyinchi/bhpan-student-group-importer:latest <args>`
+`docker run -it -v <your_file_path>:/buaa/student.xlsx registry.cn-hangzhou.aliyuncs.com/geyinchi/bhpan-student-group-importer:latest <args>`
 * 如果需要环境变量传入密码：
-`docker run -it registry.cn-hangzhou.aliyuncs.com/geyinchi/bhpan-student-group-importer:latest -e BHPAN_PASSWORD=<password> <args>`
-基本与用法一相同
+`docker run -it -v <your_file_path>:/buaa/student.xlsx registry.cn-hangzhou.aliyuncs.com/geyinchi/bhpan-student-group-importer:latest -e BHPAN_PASSWORD=<password> <args>`
+基本与用法一相同，文件地址为你挂载到容器内的地址。
 ## 参数说明
 
     欢迎使用北航网盘学生花名册导入工具
