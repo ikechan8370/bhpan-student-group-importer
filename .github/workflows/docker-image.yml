@@ -23,7 +23,7 @@ jobs:
       run:
         cd java-client && mvn clean install && cd .. && mvn clean package -DskipTests=true -Dmaven.javadoc.skip=true -B -V
     - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: geyinchi/bhpan-student-group-importer
         username: ${{ secrets.DOCKER_USERNAME }}
